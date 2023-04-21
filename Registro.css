@@ -14,6 +14,8 @@ body {
     width: 100%;
     height: 100%;
     height: 100dvh;
+    padding: 0px;
+    margin: 0px;
 }
 
 .contenedor {
@@ -277,26 +279,65 @@ a {
 
 
 @media(max-width: 900px) {
+
+    body {
+
+        
+        padding: 0px;
+        margin: 0px;
+    }
     .cuadro-derecho {
         flex-direction: column;
-        width: 90%;
-        height: 80%;
+        height: 100vh;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 0px;
         border-radius: 0px;
 
+    }
+    .snoop{
+
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        width: 100%;
+        margin-left: -20px;
+        margin-top: -100px;
+    
+    }
+    .empieza {
+
+        display: flex;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        font-family: "Roboto", sans-serif;
+        color: #808285;
+        font-size: 20px;
+        
+    }
+    .contenedor-svg{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #F2F2F2;
+        margin-bottom: -90px;
+    
     }
 }
 
 @media(max-width: 900px) {
     .contenedor {
-        max-width: 100%;
         height: 100dvh;
-        height: auto;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        padding-bottom: -50px;
 
     }
 }
